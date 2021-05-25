@@ -1,0 +1,13 @@
+{
+  "name": "teaching-vacancies-slackbot",
+  "version": "0.0.1",
+  "description": "NodeJS application to utilise slack APIs using Bolt framework",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@slack/bolt": "^3.3.0"
+  },
+  "license": "MIT"
+}

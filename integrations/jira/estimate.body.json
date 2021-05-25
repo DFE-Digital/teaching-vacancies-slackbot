@@ -1,0 +1,41 @@
+{
+  "text": "{{issue.key}}",
+    "blocks": [
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": "Ready to estimate"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "@channel"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "<{{issue.url}}|{{issue.url}}>\n{{issue.summary}}"
+			}
+		},
+		{
+			"type": "actions",
+			"elements": [
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Click to submit your estimate"
+					},
+					"style": "primary",
+					"value": "{{issue.key}}",
+          "action_id": "refinement"
+				}
+			]
+		}
+    ]
+  }

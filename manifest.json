@@ -1,0 +1,54 @@
+{
+  "_metadata": {
+      "major_version": 1,
+      "minor_version": 1
+  },
+  "display_information": {
+      "name": "Ticket refinement"
+  },
+  "features": {
+      "app_home": {
+          "home_tab_enabled": false,
+          "messages_tab_enabled": true,
+          "messages_tab_read_only_enabled": true
+      },
+      "bot_user": {
+          "display_name": "refinement",
+          "always_online": true
+      },
+      "workflow_steps": [
+          {
+              "name": "test",
+              "callback_id": "test"
+          }
+      ]
+  },
+  "oauth_config": {
+      "scopes": {
+          "user": [
+              "chat:write"
+          ],
+          "bot": [
+              "chat:write",
+              "incoming-webhook",
+              "workflow.steps:execute",
+              "channels:read"
+          ]
+      }
+  },
+  "settings": {
+      "event_subscriptions": {
+          "request_url": "https://ticket-refinement.herokuapp.com/slack/events",
+          "bot_events": [
+              "workflow_step_execute"
+          ]
+      },
+      "interactivity": {
+          "is_enabled": true,
+          "request_url": "https://ticket-refinement.herokuapp.com/slack/events"
+      },
+      "org_deploy_enabled": false,
+      "socket_mode_enabled": false,
+      "is_hosted": false
+  }
+}

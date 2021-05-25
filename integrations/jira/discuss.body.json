@@ -1,0 +1,26 @@
+{
+  "text": "{{issue.key}}",
+    "blocks": [
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": "Ready to discuss"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "@channel"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "<{{issue.url}}|{{issue.url}}>\n{{issue.summary}}"
+			}
+		}
+    ]
+  }
