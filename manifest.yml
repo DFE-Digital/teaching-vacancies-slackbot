@@ -1,0 +1,6 @@
+---
+applications:
+- name: teaching-vacancies-slackbot
+  memory: 128M
+  buildpacks:
+  - nodejs_buildpack
