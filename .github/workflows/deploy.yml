@@ -34,8 +34,9 @@ jobs:
           node-version: 14
       - name: Install dependencies
         run: npm install
+      - name: Set SLACK_BOT_TOKEN
+        run: cf set-env teaching-vacancies-slackbot SLACK_BOT_TOKEN ${{ secrets.SLACK_BOT_TOKEN }}
+      - name: Set SLACK_SIGNING_SECRET
+        run: cf set-env teaching-vacancies-slackbot SLACK_SIGNING_SECRET ${{ secrets.SLACK_SIGNING_SECRET }}
       - name: Push application
         run: cf push
-        with:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-          SLACK_SIGNING_SECRET: ${{ secrets.SLACK_SIGNING_SECRET }}
