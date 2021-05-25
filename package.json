@@ -9,5 +9,8 @@
   "dependencies": {
     "@slack/bolt": "^3.3.0"
   },
+  "engines": {
+    "node": ">=12.13.0"
+  },
   "license": "MIT"
 }
