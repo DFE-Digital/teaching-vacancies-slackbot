@@ -5,4 +5,4 @@ const app = new App({
   signingSecret: process.env.SIGNING_SECRET
 });
 
-export default app;
+module.exports =  app;

@@ -117,4 +117,4 @@ const refinement = (app) => {
   });
 };
 
-export default refinement;
+module.exports = refinement;
