@@ -38,14 +38,14 @@
   },
   "settings": {
       "event_subscriptions": {
-          "request_url": "https://ticket-refinement.herokuapp.com/slack/events",
+          "request_url": "https://teaching-vacancies-slackbot.london.cloudapps.digital/slack/events",
           "bot_events": [
               "workflow_step_execute"
           ]
       },
       "interactivity": {
           "is_enabled": true,
-          "request_url": "https://ticket-refinement.herokuapp.com/slack/events"
+          "request_url": "https://teaching-vacancies-slackbot.london.cloudapps.digital/slack/events"
       },
       "org_deploy_enabled": false,
       "socket_mode_enabled": false,
